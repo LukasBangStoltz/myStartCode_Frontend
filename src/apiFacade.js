@@ -62,6 +62,27 @@ function apiFacade() {
 
     return fetch(URL + "/api/info/parrallel/", options).then(handleHttpErrors);
   };
+
+  const addCharacter = (character) => {
+    let charName = character.charName;
+    let charAge = character.charAge;
+
+    console.log(charName)
+    
+    let body = ({charName: charName, charAge: charAge,} )
+    
+    const options = makeOptions("POST", body)
+    return fetch(URL + "/api/info/add", options).then(handleHttpErrors);
+
+
+  }
+
+  const fetchJoke = () => {
+    
+    const options = makeOptions("GET")
+
+    return fetch(URL + "/api/info/joke", options).then(handleHttpErrors);
+  }
   const makeOptions = (method, addToken, body) => {
     var opts = {
       method: method,
@@ -87,7 +108,9 @@ function apiFacade() {
     logout,
     fetchData,
     fetchStarwars,
-    getRole
+    getRole, 
+    fetchJoke,
+    addCharacter
   };
 }
 
