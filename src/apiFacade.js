@@ -64,7 +64,7 @@ function apiFacade() {
   };
 
   const addCharacter = (character) => {
-    const options = makeOptions("POST", {
+    const options = makeOptions("POST", true, {
       charName: character.charName,
       charAge: character.charAge,
     });
