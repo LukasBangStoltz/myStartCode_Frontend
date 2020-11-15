@@ -64,14 +64,10 @@ function apiFacade() {
   };
 
   const addCharacter = (character) => {
-    let charName = character.charName;
-    let charAge = character.charAge;
-
-    console.log(charName)
-    
-    let body = ({charName: charName, charAge: charAge,} )
-    
-    const options = makeOptions("POST", body)
+    const options = makeOptions("POST", {
+      charName: character.charName,
+      charAge: character.charAge,
+    });
     return fetch(URL + "/api/info/add", options).then(handleHttpErrors);
 
 

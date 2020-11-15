@@ -44,23 +44,14 @@ function App() {
               <p>{error}</p>
 
               <p>
-                Dette er velkomstsiden til vores startcode.
-                <br />
-                Log ind som user/testuser eller admin/testadmin.
-                <br />
-                Som user og admin kan man tilgå begge brugerheadere.
-                <br />
-                Afhængigt af hvilken rolle man har, får man fremvist en
-                <br />
-                besked, der fortæller om man er logget ind som bruger eller
-                admin.
-                <br />
-                <br />
-                Man kan tilgå Starwars-route uanset om man er logget ind.
-                <br />
-                Komponentet fetcher fra swapi.com, fra fem forskellige
-                endpoints. Et for hver linje.
-                <br />
+                Jeg brugte startkoden til hurtigt at sætte en fetch af
+                forskellige starwars quotes op. <br></br>I backenden, lavede jeg
+                et eksternt kald til et api, hvor jeg implementerede tråde til
+                af fange dataen. <br></br>I min frontend har jeg brugt det api
+                fra min backend, til at kunne vise en enkelt quote ad gangen,
+                som opdateres ved klik på knap.
+                <br></br>Jeg har dernæst forsøgt at lave en entitet i form af en favorit karakter, som en given bruger på siden kan vælge.
+                <br></br>Jeg nåede ikke i hus med opgaven, da jeg er stødt på mange problemer undervejs... I backenden fungere entiteten, men der kan ikke oprettes nye favoritkarakterer fra frontenden, hvilket var meningen.
               </p>
             </Route>
           </div>
